@@ -1,0 +1,35 @@
+# Keil build output
+Objects/
+Listings/
+*.axf
+*.hex
+*.bin
+*.map
+*.lst
+*.dep
+*.d
+*.crf
+*.htm
+
+# Keil user-specific files
+*.uvguix.*
+*.uvoptx
+
+# Debug files
+*.dbgconf
+
+# VS Code
+.vscode/
+
+# STM32CubeIDE
+Debug/
+Release/
+
+# OS temporary files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Backup files
+*.bak
+*.tmp
