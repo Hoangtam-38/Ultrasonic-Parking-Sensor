@@ -438,8 +438,9 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, SEG_A_Pin|SEG_B_Pin|SEG_C_Pin|LEVEL2_Pin
-                          |LEVEL3_Pin|LEVEL4_Pin|SEG_D_Pin|SEG_E_Pin
-                          |SEG_F_Pin|SEG_G_Pin|SEG_DP_Pin|LEVEL1_Pin, GPIO_PIN_RESET);
+                          |LEVEL3_Pin|LEVEL4_Pin|LEVEL5_Pin|SEG_D_Pin
+                          |SEG_E_Pin|SEG_F_Pin|SEG_G_Pin|SEG_DP_Pin
+                          |LEVEL1_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pins : TRIG_LEFT_Pin TRIG_RIGHT_Pin DIGIT1_Pin DIGIT2_Pin
                            DIGIT3_Pin DIGIT4_Pin */
@@ -451,21 +452,17 @@ static void MX_GPIO_Init(void)
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
   /*Configure GPIO pins : SEG_A_Pin SEG_B_Pin SEG_C_Pin LEVEL2_Pin
-                           LEVEL3_Pin LEVEL4_Pin SEG_D_Pin SEG_E_Pin
-                           SEG_F_Pin SEG_G_Pin SEG_DP_Pin LEVEL1_Pin */
+                           LEVEL3_Pin LEVEL4_Pin LEVEL5_Pin SEG_D_Pin
+                           SEG_E_Pin SEG_F_Pin SEG_G_Pin SEG_DP_Pin
+                           LEVEL1_Pin */
   GPIO_InitStruct.Pin = SEG_A_Pin|SEG_B_Pin|SEG_C_Pin|LEVEL2_Pin
-                          |LEVEL3_Pin|LEVEL4_Pin|SEG_D_Pin|SEG_E_Pin
-                          |SEG_F_Pin|SEG_G_Pin|SEG_DP_Pin|LEVEL1_Pin;
+                          |LEVEL3_Pin|LEVEL4_Pin|LEVEL5_Pin|SEG_D_Pin
+                          |SEG_E_Pin|SEG_F_Pin|SEG_G_Pin|SEG_DP_Pin
+                          |LEVEL1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
-  /*Configure GPIO pin : LEVEL5_Pin */
-  GPIO_InitStruct.Pin = LEVEL5_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(LEVEL5_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : PB9 */
   GPIO_InitStruct.Pin = GPIO_PIN_9;

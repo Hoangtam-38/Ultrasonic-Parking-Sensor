@@ -394,21 +394,6 @@
           <GroupName>Application/User/Core</GroupName>
           <Files>
             <File>
-              <FileName>main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/main.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f1xx_it.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/stm32f1xx_it.c</FilePath>
-            </File>
-            <File>
-              <FileName>stm32f1xx_hal_msp.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Core/Src/stm32f1xx_hal_msp.c</FilePath>
-            </File>
-            <File>
               <FileName>alarm.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Core\Src\alarm.c</FilePath>
@@ -432,6 +417,21 @@
               <FileName>ultrasonic.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Core\Src\ultrasonic.c</FilePath>
+            </File>
+            <File>
+              <FileName>main.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Core/Src/main.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f1xx_it.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Core/Src/stm32f1xx_it.c</FilePath>
+            </File>
+            <File>
+              <FileName>stm32f1xx_hal_msp.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>../Core/Src/stm32f1xx_hal_msp.c</FilePath>
             </File>
           </Files>
         </Group>
