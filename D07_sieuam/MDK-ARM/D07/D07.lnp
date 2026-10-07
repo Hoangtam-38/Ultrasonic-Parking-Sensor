@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"d07\startup_stm32f103xb.o"
+"d07\main.o"
+"d07\stm32f1xx_it.o"
+"d07\stm32f1xx_hal_msp.o"
+"d07\gpio.o"
+"d07\tim.o"
+"d07\stm32f1xx_hal_gpio_ex.o"
+"d07\stm32f1xx_hal_tim.o"
+"d07\stm32f1xx_hal_tim_ex.o"
+"d07\stm32f1xx_hal.o"
+"d07\stm32f1xx_hal_rcc.o"
+"d07\stm32f1xx_hal_rcc_ex.o"
+"d07\stm32f1xx_hal_gpio.o"
+"d07\stm32f1xx_hal_dma.o"
+"d07\stm32f1xx_hal_cortex.o"
+"d07\stm32f1xx_hal_pwr.o"
+"d07\stm32f1xx_hal_flash.o"
+"d07\stm32f1xx_hal_flash_ex.o"
+"d07\stm32f1xx_hal_exti.o"
+"d07\system_stm32f1xx_1.o"
+--strict --scatter "D07\D07.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "D07.map" -o D07\D07.axf
