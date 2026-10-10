@@ -419,6 +419,16 @@
               <FileType>1</FileType>
               <FilePath>..\Core\Src\tim.c</FilePath>
             </File>
+            <File>
+              <FileName>distance_filter.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\distance_filter.c</FilePath>
+            </File>
+            <File>
+              <FileName>distance_filter_test.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Core\Src\distance_filter_test.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

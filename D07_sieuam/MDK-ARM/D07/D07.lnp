@@ -5,6 +5,8 @@
 "d07\stm32f1xx_hal_msp.o"
 "d07\gpio.o"
 "d07\tim.o"
+"d07\distance_filter.o"
+"d07\distance_filter_test.o"
 "d07\stm32f1xx_hal_gpio_ex.o"
 "d07\stm32f1xx_hal_tim.o"
 "d07\stm32f1xx_hal_tim_ex.o"
